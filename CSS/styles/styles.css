@@ -1,0 +1,39 @@
+/*
+    Mi primer comentario
+*/
+:root {
+    --main_color:purple;
+}
+
+h3{
+    color: var(--main_color);
+}
+
+#container{
+    background-color: red;
+}
+
+.subtitulo, .parrafo{
+    color: var(--main_color);
+}
+
+ul li h2 {
+    color: chocolate;
+}
+
+#prueba{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    font-weight: 900;
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: brown;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    line-height: 100px;
+}
