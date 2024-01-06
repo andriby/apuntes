@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body{
+  background-color: #0f0f0f;
+}
+
+.fila{
+  display: flex;
+}
+
+.columna{
+  display: flex;
+  flex-direction: column;
+}
+
+.centrar_ejes {
+  justify-content: center;
+  align-items: center;
+}
+
+.separar_elementos{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.centrar-secundario{
+  align-items: center;
+}
+
+.centrar-primario{
+  justify-content: center;
+}
+
+svg{
+  fill: white;
+}
+.gap10{
+  gap: 10px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.p-nav{
+  padding: 14px 22px;
+}
+
+.button-nav{
+  padding: 3px 5px;
+  border-radius: 35px;
+  background-color: transparent;
+  border: blue 1px solid;
+  color: blue;
+}
+
+.button-nav svg{
+  fill: blue;
+}
+
+.barra-busqueda{
+  display: none;
+}
+
+#input{
+  border: 1px solid grey;
+  border-radius: 10px 0 0 10px;
+  padding: 3px 6px;
+  width: 22rem;
+  background-color: #0f0f0f;
+}
+
+#lupa{
+  border: 1px solid grey;
+  border-radius: 0 10px 10px 0;
+  background-color: transparent;
+}
+
+#microfono{
+  background-color: transparent;
+  border: none;
+}
+
+#categorias{
+  padding: 12px 5px 12px 8px;
+  overflow: hidden!important;
+  position: sticky;
+  top: 60px;
+}
+
+#categorias button{
+  background-color: transparent;
+  border: none;
+  border-radius: 45px;
+  padding: 5px 8px;
+  color: white;
+}
+
+#videos{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+aside{
+  font-size: 12px;
+  font-weight: 100;
+  padding: 20px 0;
+  position: sticky;
+  top: 60px;
+  height: 80vh;
+  display: none;
+  background-color: #0f0f0f;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+  background-color: #0f0f0f;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .barra-busqueda{
+    display: flex;
+  }
+  #videos{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  aside{
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    grid-template-columns: 6% 94%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

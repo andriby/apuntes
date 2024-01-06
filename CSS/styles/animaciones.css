@@ -1,0 +1,29 @@
+.cubo{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  animation-name: cubo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cubo{
+  0% {background-color: red; top:200px; left:200px; }
+  25% {background-color: yellow; top:400px; left:300px; width: 200px; transform: rotateX(90deg) rotateY(20deg) rotateZ(120deg)}
+  50% {background-color: green; top:350px; left:100px; transform: rotateX(20deg) rotateY(20deg) rotateZ(10deg)}
+  75% {background-color: blue; top:100px; left:200px; height: 300px; transform: rotateX(80deg) rotateY(110deg) rotateZ(150deg)}
+  100% {background-color: red; top:200px; left:200px; width: 100px; height: 100px; transform: rotateX(90deg) rotateY(20deg) rotateZ(120deg)}
+}
+
+/*
+  Realiza una copia de un perfil de instagram, esta debe tener un maximo de 5 filas de imagenes, un minimo de 3,
+  utilizar grid y flex para la realización del proyecto
+
+  Opcional: Hacer que cuando cargue la página, salga la animación del logo de instagram, como lo hace la pagina
+  real
+
+  Fecha limite: jueves 21 de diciembre
+*/

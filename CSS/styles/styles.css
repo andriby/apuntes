@@ -1,39 +1,186 @@
-/*
-    Mi primer comentario
-*/
+/* Mi primer comentario */
 :root {
-    --main_color:purple;
+  --main_color: purple;
+  --second_color: yellow;
 }
 
-h3{
-    color: var(--main_color);
+* {
+  padding: 0;
+  margin: 0;
 }
 
-#container{
-    background-color: red;
+body{
+  padding: 20px 32px;
 }
 
-.subtitulo, .parrafo{
-    color: var(--main_color);
+.subtitulo,
+.parrafo {
+  color: var(--main_color);
+}
+
+#container {
+  background-color: red;
+}
+
+.subtitulo {
+  color: aquamarine;
 }
 
 ul li h2 {
-    color: chocolate;
+  color: cadetblue;
 }
 
-#prueba{
-    width: 200px;
-    height: 200px;
-    background-color: green;
-    font-weight: 900;
-    font-size: 34px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: brown;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    word-spacing: 20px;
-    line-height: 100px;
+#prueba {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  font-weight: 900;
+  font-size: 34px;
+  font-family: 'Courier New', Courier, monospace;
+  color: yellow;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: darkblue;
+  text-transform: uppercase;
+  /*espaciado de letra*/
+  letter-spacing: 10px;
+  /*espaciado de palabra*/
+  word-spacing: 20px;
+  line-height: 100px;
+  /*Trabajar con border*/
+  /*
+  border-color: blue;
+  border-style: groove;
+  border-width: 30px;
+  */
+  /*Atajo para trabajar con border*/
+  border: groove blue 30px;
+  border-radius: 100%;
+  /*
+    Margen: es la distancia de un elemento con
+    respecto a otro
+    los valores funcionan en el sentido de las
+    agujas del reloj
+  */
+  margin: 100px 200px 0 50px;
+  /*
+    Padding: es la distancia del borde de la caja
+    con respecto a su contenido
+  */
+  padding: 200px;
+  /*Anchura y altura minima*/
+  min-width: 100px;
+  min-height: 100px;
+  /*Anchura y altura maxima*/
+  max-width: 700px;
+  max-height: 700px;
+  /*
+    Existen diversas formas de colocar colores
+    en CSS, una de ellas es mencionar el color
+    en idioma ingles, pero también puedes usar
+    codigo Hexadecimal, RGB, RGB, HSL
+  */
+  /*
+  color: #5AAADB;
+  color: #faebd7d7;
+  color: rgb(0,0,0);
+  color: rgba(255,50,20,0.50)
+  color: hsl(0, 100%, 50%)
+  */
+  opacity: 80%;
+  /*
+  REM hace referencia a un tamaño por default que
+  el navegador tiene, esta medida es relativa
+  pues el tamaño por default puede cambiar segun
+  el ancho del navegador. Decir 3rem es decir
+  3 veces ese tamaño por default
+  font-size: 3rem;
+  EM hace referencia al tamaño por default del
+  elemento HTML en si
+  font-size: 3em;
+  */
+  /*
+    vh = viewport height (altura del navegador)
+    vw = vierport width (anchura del navegador)
+  */
+  height: 100vh;
+  width: 100vw;
+  /*
+    Desaparece el elemento
+    display: none;
+  */
+  /*display flex hace una fila automaticamente*/
+  display: flex;
+  flex-direction: column;
+  /*justify content eje principal*/
+  justify-content: center;
+  /*align items eje secundario*/
+  align-items: center;
+  background-image: url("./../images/student.png");
+  transition: padding 2s, background-color 3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
 }
+
+/*
+El !important hace que ese estilo tenga la maxima
+prioridad
+h2{
+  color: red !important;
+}
+*/
+
+/*
+  Pseudo clases
+  Manejan los estados de un elemento
+*/
+
+#prueba:hover{
+  background-color: cadetblue;
+  padding: 0;
+}
+
+a:visited{
+  color:red
+}
+
+a:link{
+  color: aqua;
+}
+
+#padre p:first-child{
+  color: brown;
+}
+
+.input:focus{
+  outline: 5px solid blue;
+}
+
+p::first-letter{
+  color: chocolate;
+}
+
+p::first-line{
+  color: crimson;
+}
+
+p::before{
+  content: "Hola";
+}
+
+p::after{
+  content: "Adios"
+}
+/*
+Realiza una página para MOVISTAR
+la cual tiene que mostrar una barra de navegación
+que te permita conocer sus productos y servicios
+
+la pagina debe principal debe mostrar de forma muy
+resumida, estos productos o servicios.
+
+El diseño y colores, quedan por parte del estudiante
+puede incluso rediseñar el estilo visual de Movistar
+
+Fecha de entrega: Martes 12/12/23
+*/

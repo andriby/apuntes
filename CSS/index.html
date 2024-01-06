@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <style>
-        h2{
-            color: green;
-        }
-    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <!--CSS IN LINE-->
-    <h1 style="color: red;">Hola Mundo</h1>
-
-    <!--CSS IN HEAD-->
+    <!--Bloque CSS-->
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
+    <!--CSS In External File (Archivo externo)-->
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!--CSS In Line (En linea)-->
+    <h1 style="color: red">Hola mundo</h1>
+    <!--CSS In Head (En cabeza)-->
     <h2>Hola mundo</h2>
     <h2>Otro titular verde</h2>
-
-    <!-- CSS IN EXTERNAL FILE -->
-    <h3>Hola mundo</h3>
-    <!-- ID -->
+    <h3>Titular purpura</h3>
+    <!--Agrupacion de elementos-->
+    <!--ID-->
     <div id="container">
-        <h1>Titulo</h1>
+      <h1>Titulo</h1>
     </div>
-
-    <!-- Class -->
-    <h2 class="subtitulo parrafo">Esto es un titulo</h2>
-    <h2 class="subtitulo">Esto es un titulo</h2>
-    <h2 class="subtitulo">Esto es un titulo</h2>
-
-    <!-- Siendo mas especifico -->
+    <!--Clases-->
+    <h2 class="subtitulo parrafo">Soy parte de subtitulo</h2>
+    <h2 class="subtitulo">Soy parte de subtitulo</h2>
+    <h2 class="subtitulo">Soy parte de subtitulo</h2>
+    <!--Siendo mas espcifico-->
     <ul>
-        <li>
-            <h2 class="subtitulo">Hola</h2>
-        </li>
+      <li>
+        <h2 class="subtitulo">Hola</h2>
+      </li>
     </ul>
 
     <div id="prueba">
-        <p>hola Mundo</p>
+      <p>Hola Mundo</p>
+      <p>Prueba</p>
     </div>
-</body>
+
+    <div id="padre">
+      <p>Primer hijo</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dignissimos ipsum adipisci, mollitia maiores tenetur? Quasi rerum sunt molestias dolorem adipisci quidem illum repellendus quod suscipit. Architecto eius velit sed?</p>
+      <input class="input" type="text">
+    </div>
+
+    <a href="https://www.youtube.com">Hola</a>
+  </body>
 </html>

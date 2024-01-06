@@ -1,0 +1,41 @@
+/*
+  Mi primera variable
+$primary-color: red
+
+@import './components/_nav.sass'
+
+/*
+  Un MIXIN es una caja de codigo reutilizable
+@mixin font-style($size: 24px, $weight: 500, $space: 12px, $background: auto, $text-color: auto)
+  font-size: $size
+  font-weight: $weight
+  letter-spacing: $space
+  margin: $margin
+  /*
+    Condicionales
+  @if $background == black and $text-color == auto
+    background-color: $background
+    color: white
+  @else if $background == green or $text-color == yellow
+    @error "El color #{$background} es horrible"
+  @else
+    background-color: $background
+    color: $text-color
+  
+
+
+.button
+  @include font-style(24px,700,12,red)
+  border-radius: 35px
+  p
+    color: white
+
+.bg-red
+  background-color: $primary-color
+
+/*
+  Proyecto SASS
+  Realizar un Blog de salud con una grilla de articulos (3 columnas, 2 filas maximo)
+  y un banner o sección principal al inicio, además de una barra de navegación.
+  Este proyecto debe ser responsive (Componentes, mixins, condicionales y variables)
+  Fecha de entrega: 09/01/24
