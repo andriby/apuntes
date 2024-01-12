@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Tailwind</title>
+
+</head>
+<body>
+    <nav class="bg-blue-600 flex justify-between align-center text-white py-[12px] px-[18px] text-2xl">
+        <div>
+            <p>Logo</p>
+        </div>
+        <div class="flex md:hidden">
+            <p>X</p>
+        </div>
+        <div class="md:flex gap-3 hidden">
+            <p class="hover:font-bold hover:cursor-pointer">Inicio</p>
+            <p class="hover:font-bold hover:cursor-pointer">Nosotros</p>
+            <p class="hover:font-bold hover:cursor-pointer">Contactos</p>
+        </div>
+    </nav>
+    <section class="bg-gray-600 flex flex-col items-center text-white gap-8 py-2">
+        <h1 class="text-4xl font-bold">Blog</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center items-center text-white gap-8 px-8">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="bg-white rounded-xl px-4 py-2 flex flex-col gap-4 text-black">
+                <img class="w-[200px] h-[100%]" src="https://ethic.es/wp-content/uploads/2023/03/imagen.jpg">
+                <h2>Titulo</h2>
+                <p>Descripcion</p>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="bg-white rounded-xl px-4 py-2 flex flex-col gap-4 text-black">
+                <img class="w-[200px] h-[100%]" src="https://ethic.es/wp-content/uploads/2023/03/imagen.jpg">
+                <h2>Titulo</h2>
+                <p>Descripcion</p>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="bg-white rounded-xl px-4 py-2 flex flex-col gap-4 text-black">
+                <img class="w-[200px] h-[100%]" src="https://ethic.es/wp-content/uploads/2023/03/imagen.jpg">
+                <h2>Titulo</h2>
+                <p>Descripcion</p>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="bg-white rounded-xl px-4 py-2 flex flex-col gap-4 text-black">
+                <img class="w-[200px] h-[100%]" src="https://ethic.es/wp-content/uploads/2023/03/imagen.jpg">
+                <h2>Titulo</h2>
+                <p>Descripcion</p>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="bg-white rounded-xl px-4 py-2 flex flex-col gap-4 text-black">
+                <img class="w-[200px] h-[100%]" src="https://ethic.es/wp-content/uploads/2023/03/imagen.jpg">
+                <h2>Titulo</h2>
+                <p>Descripcion</p>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="bg-white rounded-xl px-4 py-2 flex flex-col gap-4 text-black">
+                <img class="w-[200px] h-[100%]" src="https://ethic.es/wp-content/uploads/2023/03/imagen.jpg">
+                <h2>Titulo</h2>
+                <p>Descripcion</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
