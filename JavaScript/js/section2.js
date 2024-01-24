@@ -81,6 +81,8 @@ console.log(cadena.toUpperCase())
 console.log(cadena.toLowerCase())
 // Obtener caracter de una cadena
 console.log(cadena.charAt(5))
+// Obtener el utlimo caracter de una cadena
+console.log(cadena.charAt(cadena.length -1))
 // Verificar si una cadena contiene un texto
 console.log(cadena.includes("Mundo"))
 // Reemplazar texto de una cadena
@@ -92,3 +94,68 @@ console.log(cadena.slice(0, 4))
 
 // Cortar un string 
 console.log(cadena.substring(0, 4))
+
+// Arreglos (Arrays)
+// Los arreglos se empiezan a contar desde 0
+//                0         1       2        3
+let frutas = ["Manzana", "Mango", "Pera", "Fresa"]
+console.log(frutas)
+// Imprimir alguna posicion del arreglo
+console.log(frutas[0])
+
+// El arreglo puede ser de varios tipos
+let aleatorio = [1, "Hola", true, 2.5, [1, 2, 3]]
+console.log(aleatorio)
+
+// Arreglo de arreglos
+let compras= [
+    ["Manzana", "Pera"], 
+    ["jamon", "queso"], 
+    ["carne", "pollo"]
+]
+
+// Imprimir elementos del arreglo de arreglos
+console.log(compras[1][0])
+
+// Metodos de arreglos
+let listaFrutas = ["Manzana", "Mango", "Pera", "Fresa"]
+// Agregar un elemento al final del arreglo
+listaFrutas.push("Uva")
+console.log(listaFrutas)
+// Eliminar el ultimo elemento
+listaFrutas.pop()
+console.log(listaFrutas)
+// Agregar un elemento al principio del arreglo
+listaFrutas.unshift("Uva")
+console.log(listaFrutas)
+// Eliminar el primer elemento
+listaFrutas.shift()
+console.log(listaFrutas)
+// Eliminar un elemento por el indice
+listaFrutas.splice(2, 1)
+console.log(listaFrutas)
+// Obtener el indice de un elemento
+console.log(listaFrutas.indexOf("Manzana"))
+// Reemplazar un elemento por su indice
+listaFrutas[1] = "Uva"
+console.log(listaFrutas)
+// Ordenar un arreglo alfabeticamente
+listaFrutas.sort()
+console.log(listaFrutas)
+// Invertir el orden de un arreglo
+listaFrutas.reverse()
+console.log(listaFrutas)
+// Obtener un SubArreglo
+console.log(listaFrutas.slice(0,2))
+// Obtener la longitud de un arreglo
+console.log(listaFrutas.length)
+
+// Bucles, loops, ciclos
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+
+// Recorrer un arreglo
+for (let i = 0; i < listaFrutas.length; i++) {
+    console.log(listaFrutas[i])
+}
