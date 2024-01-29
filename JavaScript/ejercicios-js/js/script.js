@@ -232,3 +232,123 @@ function masLenght(arreglo) {
 }
 
 masLenght(frutas)
+
+// Ejercicio 15
+
+function fibonacci() {
+    let numero1 = 1
+    let numero2 = 1
+    for (let i = 0; i < 10; i++) {
+        numero1 = numero1 + numero2
+        numero2 = numero1 + numero2
+        console.log(numero1)
+        console.log(numero2)
+    }
+}
+
+fibonacci()
+
+//Segun el siguiente arreglo de objetos:
+
+const personas = [
+{
+    nombre: "Juan",
+    apellido: "Perez",
+    edad: 25,
+    hobbies: ["correr", "saltar", "dormir"],
+    direccion: {
+    direccion_antigua: {
+        calle: "calle 1",
+        numero: 1,
+        barrio: "barrio 1",
+    },
+    direccion_actual: {
+        calle: "calle 2",
+        numero: 2,
+        barrio: "barrio 2",
+    },
+    },
+},
+{
+    nombre: "Maria",
+    apellido: "Lopez",
+    edad: 30,
+    hobbies: ["correr", "saltar", "dormir"],
+    direccion: {
+    direccion_antigua: {
+        calle: "calle 3",
+        numero: 3,
+        barrio: "barrio 3",
+    },
+    direccion_actual: {
+        calle: "calle 4",
+        numero: 4,
+        barrio: "barrio 4",
+    },
+    },
+},
+{
+    nombre: "Pedro",
+    apellido: "Martinez",
+    edad: 35,
+    hobbies: ["correr", "saltar", "dormir"],
+    direccion: {
+    direccion_antigua: {
+        calle: "calle 5",
+        numero: 5,
+        barrio: "barrio 5",
+    },
+    direccion_actual: {
+        calle: "calle 6",
+        numero: 6,
+        barrio: "barrio 6",
+    },
+    },
+},
+]
+
+// Ejercicios con Objetos
+
+// Ejercicio 1
+for (const persona of personas) {
+    console.log('Nombre:', persona.nombre)
+}
+
+// Ejercicio 2
+for (const persona of personas) {
+    for (const hobbie of persona.hobbies) {
+        console.log(hobbie)
+    }
+} 
+
+// Ejercicio 3
+
+for (const persona of personas) {
+    console.log(`Direcciones de ${persona.nombre}`)
+    console.log('Direccion actual: ')
+    for (const direccion in persona.direccion.direccion_actual) {
+        console.log(`${direccion}: ${persona.direccion.direccion_actual[direccion]}`)
+    }
+    console.log('Direccion antigua: ')
+    for (const direccion in persona.direccion.direccion_antigua) {
+        console.log(`${direccion}: ${persona.direccion.direccion_antigua[direccion]}`)
+    }
+} 
+
+// Ejercicio 4
+for (const persona of personas) {
+    console.log(`Direcciones de ${persona.nombre}`)
+    console.log('Direccion actual: ')
+    for (const direccion in persona.direccion.direccion_actual) {
+        console.log(`${direccion}: ${persona.direccion.direccion_actual[direccion]}`)
+    }
+}
+
+// Ejercicio 5
+for (const persona of personas) {
+    console.log(`Direcciones de ${persona.nombre}`)
+    console.log('Direccion antigua: ')
+    for (const direccion in persona.direccion.direccion_antigua) {
+        console.log(`${direccion}: ${persona.direccion.direccion_antigua[direccion]}`)
+    }
+}

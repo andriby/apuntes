@@ -159,3 +159,50 @@ for (let i = 0; i < 10; i++) {
 for (let i = 0; i < listaFrutas.length; i++) {
     console.log(listaFrutas[i])
 }
+
+// Bucle while
+
+let i = 1
+while (i <= 10) {
+    console.log(i)
+    i++
+}
+
+j = 0
+
+do{
+    console.log(j)
+    j++
+} while(j < 10)
+
+// For of
+/* 
+    Sirve para recorrer arreglos
+*/ 
+
+let numeros = [1, 3, 4, 2, 12]
+for(let numero of numeros){
+    console.log(numero)
+}
+
+// Objetos
+
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    profesion: "Ingeniero",
+    saludar: function() {
+    return "¡Hola! Soy " + this.nombre + " y tengo " + this.edad + " años.";
+    }
+};
+
+console.log(persona.nombre)
+
+// For in 
+/* 
+    sirve para recorrer objetos
+*/
+
+for(let propiedad in persona){
+    console.log(persona[propiedad])
+}
