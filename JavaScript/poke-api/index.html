@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Pokedex</title>
+</head>
+<body class="bg-gradient-to-r from-green-600 via-green-600 to-green-700 py-5">
+    <h1 class="text-center text-5xl my-5 uppercase">Pokedex</h1>
+    <div class="container mx-auto flex justify-between py-3">
+        <div id="lista" class="w-[100%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+        </div>
+<!--         <div class="w-[50%] bg-white rounded-lg sticky top-[8rem] h-[30rem] p-5 bg-[url('./img/pokebola.png')] bg-no-repeat bg-center backdrop-opacity-10" id="datos">
+            <h2 class="text-center">Datos del pokemon</h2>
+            <div id="datos">
+
+            </div>
+        </div> -->
+    </div>
+    <div class="flex justify-around items-center">
+        <button onclick="anterior()" id="anterior" class="bg-white px-4 py-2 rounded">Anterior</button>
+        <button onclick="siguiente()" class="bg-white px-4 py-2 rounded">Siguiente</button>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
